@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define body and make it a flexbox. */
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Define header as flexbox consisting of the logo and links. */
+.header {
+    height: 52px;
+    background-color: #1F2937;
+    padding: 16px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+/* =============================================================================================*/
+
+/* Define hero-section capturing .hero-image-container and .hero-text-container. */
+.hero-section {
+    display: flex;
+    background-color: #1F2937;
+    padding: 0px 120px;
+    align-items: center;
+    gap: 48px; /* gap between .hero-container and .hero-image-container */
+}
+
+/* Define .hero-text-container capturing .hero-title, .sub-hero-text and button. */
+.hero-text-container {
+    flex: 3; /* Takes 3 parts from parent's space, around 60%. */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Define children inside .hero-text-container - hero-title, sub-hero-text, button */
+.hero-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.sub-hero-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 32px;
+    border: 0;
+}
+
+/* Define .hero-image-container and .hero-container. Both share .main-section's space. */
+.hero-image-container {
+    flex: 2; /* Takes 2 parts from parent's space, around 40%. */
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ================================================================== */
+
+/* Define .secondary-section containing cards with images and text. */
+.secondary-section {
+    display: flex;
+    flex-direction: column; /* This flexbox is column oriented because the title has to be on top of the cards area. */
+}
+
+.secondary-section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding-top: 48px;
+}
+
+/* Define container for all cards. */
+.cards-container {
+    display: flex;
+    padding: 48px 48px 96px;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Each card is itself a container to align the picture and the text. */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 0 1 240px; /* Each card starts from 200px and can shrink but can't grow. */
+}
+
+/* Define picture sizes. We keep them fixed and smaller than the card parent.*/
+.card img {
+    width: 120px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+/* img-text is the sibling of img. */
+.img-text {
+    text-align: center;
+}
+
+/* ============================================================================ */
+/* Define .quote-section as a flexbox to align children divs. */
+.quote-section {
+    display: flex;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    gap: 8px;
+    padding: 152px;
+}
+
+/* Define .quote-text. */
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+/* ============================================================ */
+/* Call to action section. */
+/* Define the section container. */
+.call-section-container {
+    padding: 76px 152px;
+}
+
+/* Define the blue container as flexbox. It has two children: .call-message and button. */
+.call-blue-container {
+    display: flex;
+    background-color: #3882F6;
+    padding: 48px 96px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+/* .call-message has two children: .call-title and .call-text. */
+.call-message {
+    /* We don't need anything here, the children align on top of each other in the normal flow. The reason
+    why this is different than .hero-text-container is that we made that class a flexbox. .call-message
+    is not a flexbox so the elements inside are block elements that align on top of each other and take
+    all available space horizontally. In a flexbox elements are aligned horizontally as flex-direction has 
+    by default row value. */
+}
+
+.call-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #E5E7EB;
+}
+
+.call-text {
+    color: #E5E7EB;
+}
+
+.call-blue-container button {
+    border: 2px solid white;
+    margin-left: auto;
+}
+
+/* ========================================================================= */
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    background-color: #1F2937;
+    padding: 48px 0px;
+}
+
+.copy-symbol {
+    margin-left: 10px;
+    margin-right: 10px;
+}

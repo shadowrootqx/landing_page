@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header. Captues logo and nav. -->
+    <header class="header">
+        <div class="logo"><code>&lt;/&gt;</code> JuniorHub</div>
+        <nav class="header-links">
+            <ul>
+                <li><a href="#">Tracks</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section. Captures hero-text-container and hero-image-container. -->
+    <main class="hero-section">
+        <div class="hero-text-container">
+            <div class="hero-title">Let's code from scratch, together.</div>
+            <div class="sub-hero-text">Visual CSS guides, interactive browser-based exercises, and a community ready to back you up when you get stuck. Everything you need to go from your very first div to your first tech job.</div>
+            <button>Join for free</button>
+        </div>
+        <!-- Capture image in a div to use flex properties of the parent for better alignment. --> 
+        <div class="hero-image-container">
+            <img src="pictures/css.svg" alt="CSS code">
+        </div>
+    </main>
+
+    <!-- Secondary section. Captures secondary-section-title and cards-container. -->
+    <section class="secondary-section">
+        <div class="secondary-section-title">Why learn with JuniorHub?</div>
+        <div class="cards-container">
+            <div class="card">
+                <img src="pictures/css-logo.svg" alt="CSS logo">
+                <div class="img-text">Interactive CSS & HTML modules designed specifically for visual learners.</div>
+            </div>
+            <div class="card">
+                <img src="pictures/code.jpg" alt="code lines">
+                <div class="img-text">Write and test your code directly in the browser with our built-in sandbox.</div>
+            </div>
+            <div class="card">
+                <img src="pictures/chat.jpg" alt="people chatting">
+                <div class="img-text">A supportive community of self-taught developers ready to review your projects.</div>
+            </div>
+            <div class="card">
+                <img src="pictures/rocket.jpg" alt="rocket flying">
+                <div class="img-text">Build real-world landing pages and apps that actually get you noticed by tech recruiters.</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quote section. -->
+    <section class="quote-section">
+        <div class="quote-text">I spent months watching random tutorials and feeling stuck in tutorial hell. Half an hour on this platform gave me that 'aha!' moment I was looking for. Now, building layouts actually makes sense.</div>
+        <div class="quote-author">- Sarah Jenkins, Junior Front-End Developer</div>
+    </section>
+
+    <!-- Call to action section. Captures call-blue-container. -->
+    <section class="call-section-container">
+        <div class="call-blue-container">
+            <div class="call-message">
+                <div class="call-title">Call to action! It's time!</div>
+                <div class="call-text">Sign up for our product by clicking that button right over there!</div>
+            </div>
+            <button>Sign up</button>
+        </div>
+    </section>
+
+    <!-- Footer. -->
+    <footer class="footer">Copyright <span class="copy-symbol">&copy;</span> The Odin Project 2021</footer>
+</body>
+</html>
